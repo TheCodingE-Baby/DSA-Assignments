@@ -17,7 +17,8 @@ public class insertNode {
 	   
 	    
 	    // Insert at any position
-	    public void InsertAtPos(int value, int pos) {
+	    public void insertAtPos(int value, int pos) {
+	    	
 	    	Node n = new Node(value);
 	    	
 	        if (pos == 0) {
@@ -53,11 +54,11 @@ public class insertNode {
 	    	insertNode i = new insertNode();
 	    	
 	    	System.out.println("Singly Linked List: ");
-	    	i.InsertAtPos(3, 0);
-	    	i.InsertAtPos(0, 1);
-	    	i.InsertAtPos(10, 2);
-	    	i.InsertAtPos(71, 3);
-	    	i.InsertAtPos(11, 4);
+	    	i.insertAtPos(3, 0);
+	    	i.insertAtPos(0, 1);
+	    	i.insertAtPos(10, 2);
+	    	i.insertAtPos(71, 3);
+	    	i.insertAtPos(11, 4);
 	    	
 	    	i.printList();
 	    	
