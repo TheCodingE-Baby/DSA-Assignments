@@ -93,6 +93,3 @@ public class DelAfterANode {
     	dA.printList();
     }
 }
-
-
-
