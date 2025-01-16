@@ -1,4 +1,3 @@
-package com.codesforDSA.www;
 
 public class SearchNode {
 	  Node head;
@@ -39,7 +38,6 @@ public class SearchNode {
 		            last = last.next;
 		            
 		        last.next = new_node_2;
-		        return;
 		    }
 		    
 	     // Search a node
