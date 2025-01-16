@@ -1,12 +1,11 @@
-package com.codesforDSA.www;
-
 public class Task {
-	private String title, desc; 
+	private  String title;
+	private String description; 
 	private boolean completed;
 	
 	public Task(String title, String desc) {
 		this.title = title;
-		this.desc = desc;
+		this.description = desc;
 		this.completed = false;
 	}
 	
@@ -14,19 +13,33 @@ public class Task {
 		return title;
 	}
 	
-	public String getDesc() {
-		return desc;
+	public String getDescription() {
+		return description;
 	}
 
 	public boolean isCompleted() {
 		return completed;
 	}
+
+	public void removeTask(){
+		if (title == null){
+			System.out.println("Invalid Task.");
+		}
+		else{
+			title = null;
+			description = null;
+			completed = false;
+		}
+	}
+	
+
 	
 	public void markCompleted() {
 		completed = true;
 	}
 	
+        @Override
 	public String toString() {
-		return "Title: " + title + "\nDescription: " + desc + "\nCompleted: " + completed;
-	}
+		return "Title: " + title + "\nDescription: " + description + "\nCompleted: " + completed;
+		}
 }

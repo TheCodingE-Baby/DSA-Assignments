@@ -1,5 +1,3 @@
-package com.codesforDSA.www;
-
 public class deleteNode {
 	
 	Node head;

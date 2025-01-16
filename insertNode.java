@@ -1,6 +1,3 @@
-package com.codesforDSA.www;
-
-
 public class insertNode {
 	    Node head;
 	    

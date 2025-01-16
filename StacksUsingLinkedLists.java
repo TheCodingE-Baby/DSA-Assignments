@@ -1,4 +1,3 @@
-package com.codesforDSA.www;
 
 public class StacksUsingLinkedLists {
 	private Node head;
