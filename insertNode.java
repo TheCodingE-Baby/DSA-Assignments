@@ -35,8 +35,12 @@ public class insertNode {
 	            	}
 	            }
 
-		        n.next = current.next;
-		        current.next = n;
+				if (current != null) {
+					n.next = current.next;
+					current.next = n;
+				} else {
+					System.out.println("Position out of bounds.");
+				}
 	        }
 	    
 	    // Print afterwards

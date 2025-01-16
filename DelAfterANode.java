@@ -5,7 +5,7 @@ public class DelAfterANode {
 	Node head;
 	
 	//Create a node 
-	class Node {
+	public class Node {
 		int val;
 		Node next;
 
@@ -33,7 +33,6 @@ public class DelAfterANode {
 		
 		Node nodeToDel = curr.next;
 		curr.next = nodeToDel.next;
-		nodeToDel = null;
 	}
 	
 	
@@ -62,8 +61,12 @@ public class DelAfterANode {
             	}
             }
 
-	        n.next = current.next;
-	        current.next = n;
+			if (current != null) {
+				n.next = current.next;
+				current.next = n;
+			} else {
+				System.out.println("Position out of bounds.");
+			}
         }
 	
     // Print afterwards

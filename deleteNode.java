@@ -56,7 +56,6 @@ public class deleteNode {
 	            last = last.next;
 	            
 	        last.next = new_node;
-	        return;
 	    }
 
 	// Print the list 
